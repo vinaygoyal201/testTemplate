@@ -1,0 +1,20 @@
+{
+  "Type": "AWS::Redshift::Cluster",
+  "Properties": {
+    "DBName": "mydb",
+    "Encrypted": true,
+    "KmsKeyId": "String",
+    "MasterUsername": "master",
+    "MasterUserPassword": {
+      "Ref": "MasterUserPassword"
+    },
+    "NodeType": "ds2.xlarge",
+    "ClusterType": "single-node",
+    "Tags": [
+      {
+        "Key": "foo",
+        "Value": "bar"
+      }
+    ]
+  }
+}

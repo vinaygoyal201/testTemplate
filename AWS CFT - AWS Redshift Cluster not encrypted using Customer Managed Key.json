@@ -1,0 +1,8 @@
+{
+	"severity": "medium",
+	"resourceType": "redshift",
+	"policy": "AWS Redshift Cluster not encrypted using Customer Managed Key",
+	"rule": "$.Type equals AWS::Redshift::Cluster and $.Properties.Encrypted is true and $.Properties.KmsKeyId exists",
+	"id": "0a86b8e2-1377-456e-ba58-e4919020d592",
+	"enabled": true
+}
