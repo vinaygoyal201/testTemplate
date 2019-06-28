@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM redmine:4.0.1
 
 RUN apk update
 RUN apk add vim
